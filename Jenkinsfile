@@ -9,8 +9,8 @@ node {
         script {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                 withCredentials([usernamePassword(credentialsId: 'github', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
-                    sh "git config user.email devopssameera@gmail.com"
-                    sh "git config user.name Sameera Dissanayaka"
+                    sh "git config user.email test@gmail.com"
+                    sh "git config user.name Mohamed ali ben souissi"
                     sh "cat deployment.yml"
                     sh "sed -i 's+devopswithsam/jenkins-flask.*+devopswithsam/jenkins-flask:${DOCKERTAG}+g' deployment.yml"
                     sh "cat deployment.yml"
