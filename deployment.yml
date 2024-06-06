@@ -18,7 +18,7 @@ spec:
         app: flaskdemo
     spec:
       containers:
-      - image: bensouissi/jenkins-flask:10
+      - image: bensouissi/jenkins-flask:11
         name: flaskdemo
         resources: {}
 status: {}
