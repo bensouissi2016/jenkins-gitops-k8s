@@ -18,11 +18,10 @@ spec:
         app: flaskdemo
     spec:
       containers:
-      - image: bensouissi/jenkins-flask:7
+      - image: bensouissi/jenkins-flask:5
         name: flaskdemo
         resources: {}
 status: {}
-
 ---
 apiVersion: v1
 kind: Service
@@ -35,4 +34,4 @@ spec:
   ports:
   - port: 80
     targetPort: 5000
-    nodePort: 30007
+    nodePort: 30007 
